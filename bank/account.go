@@ -9,3 +9,8 @@ type Account interface {
 	// Deposit adds amount to the account returning the new balance
 	Deposit(amount int) (newBalance int)
 }
+
+type ISA interface{
+	Account
+	HowPointless() bool
+}
